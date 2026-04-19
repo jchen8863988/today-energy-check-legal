@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Privacy policy for Today Energy Check — local-first wellness, optional AI (OpenAI subprocessor), subscriptions (Apple EULA), family links."
+  />
   <title>Privacy Policy — Today Energy Check</title>
   <style>
     :root { color-scheme: light dark; }
@@ -23,6 +27,7 @@
     h1 { font-size: 1.65rem; margin: 0 0 0.5rem; }
     .meta { color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; }
     h2 { font-size: 1.15rem; margin: 1.75rem 0 0.65rem; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; font-weight: 700; }
     p, li { font-size: 0.95rem; margin: 0.5rem 0; }
     ul { padding-left: 1.25rem; }
     a { color: #0b57d0; word-break: break-word; }
@@ -39,7 +44,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="meta"><strong>Last updated:</strong> April 17, 2026</p>
+  <p class="meta"><strong>Last updated:</strong> April 18, 2026</p>
   <p>
     This Privacy Policy describes how <strong>Jian Chen</strong> (“we,” “us,” or “our”) handles information when you use the mobile application
     <strong>Today Energy Check</strong> (the “App”).</p>
@@ -51,7 +56,7 @@
       <li>Core diary data is stored <strong>on your device</strong> by default.</li>
       <li>The in-app score is a <strong>self-assessment</strong>, not a medical diagnosis.</li>
       <li>Optional <strong>subscriptions</strong> are processed by Apple (App Store) and/or Google (Google Play).</li>
-      <li>Optional <strong>AI</strong> is off by default; if enabled, a minimized summary may be sent to our server.</li>
+      <li>Optional <strong>AI</strong> is off by default; if enabled, a minimized summary may be sent to our server and processed by <strong>OpenAI</strong> (see below).</li>
       <li>Optional <strong>family share links</strong> may store a limited summary on our server temporarily.</li>
     </ul>
   </div>
@@ -79,13 +84,23 @@
     These third-party sites are for general education only. They do not endorse the App and are not used to compute a medical diagnosis inside the App.
   </p>
 
+  <h3>Third-party AI (OpenAI)</h3>
+  <p>
+    If you enable <strong>optional AI personalization</strong>, the App sends a <strong>minimized structured summary</strong> of your saved check-ins (dates; whether you indicated dialysis the prior day; fatigue, nausea, and dizziness levels on a 0–2 scale) to
+    <strong>the app operator’s backend server</strong> you configure (<code>EXPO_PUBLIC_AI_SERVER_URL</code>). That server may forward a text prompt derived from this summary to
+    <strong>OpenAI</strong> (OpenAI, L.L.C.) via the OpenAI API to generate short wellness-planning suggestions.
+    <strong>OpenAI acts as a subprocessor</strong> for this feature. OpenAI’s privacy practices are described in their policy:
+    <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">https://openai.com/policies/privacy-policy/</a>.
+    The App shows an <strong>in-app disclosure</strong> (what is sent and who receives it) and asks for your confirmation before this optional transmission.
+  </p>
+
   <h2>3. Information we process</h2>
   <p>Depending on how you use the App, we may process the following categories of information:</p>
   <ul>
     <li><strong>Health-related inputs you enter</strong> (e.g., symptom levels, optional weight, optional notes about your day). Stored locally on your device unless you export or use optional features below.</li>
     <li><strong>App settings</strong> (e.g., language, AI opt-in).</li>
     <li><strong>Subscription status</strong> as reflected by Apple/Google to unlock Pro features (we do not receive your full payment card number).</li>
-    <li><strong>AI inputs (optional):</strong> If you enable AI personalization, a minimized summary of recent check-ins (without identifiers) may be transmitted to our server to generate suggestions.</li>
+    <li><strong>AI inputs (optional):</strong> If you enable AI personalization, a minimized summary of recent check-ins (without identifiers) may be transmitted to our server; prompts may be processed by OpenAI as described in “Third-party AI (OpenAI)” above.</li>
     <li><strong>Family share links (optional):</strong> If you create a shareable link, a limited summary may be stored on our server so the link can open in a web browser; links expire after a limited period.</li>
     <li><strong>Support communications</strong> if you email us (e.g., your email address and message content).</li>
   </ul>
@@ -117,7 +132,7 @@
   <h2>6. Sharing of information</h2>
   <p>
     We do not sell your personal information. We may share information with service providers who help us operate the App (for example,
-    hosting infrastructure for optional AI or family links), subject to appropriate safeguards. Payment processing is handled by Apple/Google as described above.
+    hosting infrastructure and <strong>OpenAI</strong> for optional AI, or infrastructure for family links), subject to appropriate safeguards. Payment processing is handled by Apple/Google as described above.
   </p>
 
   <h2>7. Retention</h2>
